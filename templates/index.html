@@ -1,0 +1,363 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#176b45" />
+  <title>GharSewa — Home services, made simple</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>🏡 <strong>Your home, in good hands.</strong> Trusted help for everyday fixes.</span>
+      <span>Currently serving Kathmandu Valley</span>
+    </div>
+  </div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="GharSewa home">
+        <span class="brand-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-7h6v7"/></svg>
+        </span>
+        GharSewa<span style="color:var(--green)">.</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#why-us">Why GharSewa</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-plain" id="signInBtn">Sign in</button>
+        <button class="btn btn-primary" data-book>Book a service <span aria-hidden="true">↗</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Home services, simplified</div>
+          <h1>Good help for a <span>happy home.</span></h1>
+          <p class="hero-copy">From a dripping tap to a full home clean, find reliable professionals for all your home needs — in one simple place.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-book>Find a professional <span aria-hidden="true">→</span></button>
+            <a class="btn btn-light" href="#services">Explore services</a>
+          </div>
+          <div class="trust-row">
+            <span><b class="check">✓</b> Vetted professionals</span>
+            <span><b class="check">✓</b> Clear pricing</span>
+            <span><b class="check">✓</b> Easy booking</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a home">
+          <div class="hero-panel">
+            <div class="home-illustration">
+              <svg viewBox="0 0 420 340" role="img" aria-label="A cozy house with a green roof">
+                <ellipse cx="210" cy="298" rx="150" ry="18" fill="#9fbea0" opacity=".55"/>
+                <path d="M67 153 210 42l143 111v126H67Z" fill="#f9fbf6" stroke="#416e4e" stroke-width="5" stroke-linejoin="round"/>
+                <path d="M43 157 210 25l167 132-18 21L210 52 61 178Z" fill="#176b45" stroke="#125637" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M177 88h66v47h-66z" fill="#dcecdf" stroke="#416e4e" stroke-width="4"/>
+                <path d="M210 89v45m-32-23h65" stroke="#416e4e" stroke-width="3"/>
+                <rect x="99" y="183" width="75" height="66" rx="5" fill="#dcecdf" stroke="#416e4e" stroke-width="4"/>
+                <path d="M136 184v65m-36-33h73" stroke="#416e4e" stroke-width="3"/>
+                <rect x="246" y="183" width="75" height="66" rx="5" fill="#dcecdf" stroke="#416e4e" stroke-width="4"/>
+                <path d="M283 184v65m-36-33h73" stroke="#416e4e" stroke-width="3"/>
+                <rect x="183" y="202" width="54" height="77" rx="4" fill="#c4d8c2" stroke="#416e4e" stroke-width="4"/>
+                <circle cx="225" cy="241" r="3" fill="#416e4e"/>
+                <path d="M56 282c17-25 25-26 42-4m224 5c18-29 33-28 50-2" stroke="#5b9668" stroke-width="5" fill="none" stroke-linecap="round"/>
+                <circle cx="71" cy="262" r="12" fill="#82b889"/><circle cx="346" cy="260" r="15" fill="#82b889"/>
+                <path d="M70 280v-21m276 21v-24" stroke="#416e4e" stroke-width="4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="floating-card float-one">
+              <div class="float-icon">🛠️</div><div><b>Help is on the way</b><small>Simple, stress-free booking</small></div>
+            </div>
+            <div class="floating-card float-two">
+              <div class="float-icon">⭐</div><div><b>Trusted local experts</b><small><span class="rating-stars">★★★★★</span> &nbsp;Customer first</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats-strip">
+      <div class="container stats">
+        <div class="stat"><strong>10+</strong><span>Service categories</span></div>
+        <div class="stat"><strong>One place</strong><span>For your home needs</span></div>
+        <div class="stat"><strong>Easy</strong><span>Online booking</span></div>
+        <div class="stat"><strong>Local</strong><span>Professionals near you</span></div>
+      </div>
+    </div>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">What do you need fixed?</div>
+          <h2>Home care, all in one place.</h2>
+          <p>Choose a service and let us help you find the right person for the job.</p>
+        </div>
+        <div class="search-wrap">
+          <div class="search-field">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+            <input id="serviceSearch" type="search" placeholder="Search plumbing, cleaning, repairs..." aria-label="Search services" />
+          </div>
+          <button class="btn btn-primary" id="searchBtn">Search services</button>
+        </div>
+        <div class="category-row" id="categoryRow">
+          <button class="category-chip active" data-category="All">All services</button>
+          {% for value, label in categories %}<button class="category-chip" data-category="{{ value }}">{{ label }}</button>
+          {% endfor %}
+        </div>
+        <div class="service-grid" id="serviceGrid">
+          {% for service in services %}
+          <article class="service-card" data-id="{{ service.id }}" data-name="{{ service.name }}" data-category="{{ service.category }}" data-description="{{ service.short_description }}">
+            <div class="service-icon">{{ service.icon }}</div><h3>{{ service.name }}</h3><p>{{ service.short_description }}</p><div class="service-bottom"><span class="price">{{ service.price_text }}</span><span class="arrow-circle">↗</span></div>
+          </article>
+          {% endfor %}
+          <div class="no-results" id="noResults">No services match that search. Try another keyword.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Simple from start to finish</div>
+          <h2>Getting it fixed is easy.</h2>
+          <p>No running around or calling multiple people. Just three simple steps.</p>
+        </div>
+        <div class="how-grid">
+          <div class="step"><div class="step-num">01</div><h3>Choose your service</h3><p>Tell us what needs attention. Browse the categories and pick the service that fits your home.</p></div>
+          <div class="step"><div class="step-num">02</div><h3>Set a convenient time</h3><p>Share your location, preferred date, and a few details so the right professional can be arranged.</p></div>
+          <div class="step"><div class="step-num">03</div><h3>Relax — we've got it</h3><p>Get your home task sorted and spend your time on the things that matter to you.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="why-us">
+      <div class="container why-grid">
+        <div>
+          <div class="section-kicker">The GharSewa difference</div>
+          <h2>A little more peace of mind, right at home.</h2>
+          <p class="why-copy">Home repairs shouldn't be complicated. GharSewa brings everyday home services together in one convenient place, designed around your time and your needs.</p>
+          <button class="btn" style="background:white;color:var(--green);margin-top:12px" data-book>Book your first service <span>→</span></button>
+        </div>
+        <div class="why-list">
+          <div class="why-item"><div class="mini-icon">🛡️</div><h3>Reliable professionals</h3><p>Find people for the job with a focus on quality and care.</p></div>
+          <div class="why-item"><div class="mini-icon">⏱️</div><h3>Save your time</h3><p>Request a service without contacting different workers one by one.</p></div>
+          <div class="why-item"><div class="mini-icon">💬</div><h3>Clear communication</h3><p>Share your issue and preferred schedule in one place.</p></div>
+          <div class="why-item"><div class="mini-icon">🏠</div><h3>Made for home life</h3><p>Everyday fixes and upkeep, all under one roof.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Kind words from customers</div>
+          <h2>Homeowners feel the difference.</h2>
+          <p>A great home service experience should feel easy, clear, and dependable.</p>
+        </div>
+        <div class="review-grid">
+          <article class="review"><div class="rating-stars">★★★★★</div><blockquote>“Booking a plumber was straightforward. I could explain the issue and share the time that worked for me.”</blockquote><div class="review-person"><div class="avatar">SM</div><div><strong>Sample customer</strong><small>Plumbing service</small></div></div></article>
+          <article class="review"><div class="rating-stars">★★★★★</div><blockquote>“I like having different home services in one place. The whole process feels much more organized.”</blockquote><div class="review-person"><div class="avatar">RK</div><div><strong>Sample customer</strong><small>Home cleaning</small></div></div></article>
+          <article class="review"><div class="rating-stars">★★★★★</div><blockquote>“It’s convenient to send the details of a repair request instead of explaining everything over several calls.”</blockquote><div class="review-person"><div class="avatar">AP</div><div><strong>Sample customer</strong><small>Electrical service</small></div></div></article>
+        </div>
+        <p style="text-align:center;color:#87948b;font-size:10px;margin:17px 0 0">Demo content: these testimonials are placeholders, not verified customer reviews.</p>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-panel">
+          <div><h2>One less thing to worry about.</h2><p>Tell us what your home needs. We'll help you take the next step.</p></div>
+          <button class="btn btn-primary" data-book>Get started <span>→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" style="padding-top:10px">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">Frequently asked questions</div>
+          <h2>Good to know.</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item"><button class="faq-question"><span>What is GharSewa?</span><span>+</span></button><div class="faq-answer">GharSewa is a home-services platform concept where you can request help for plumbing, electrical work, cleaning, carpentry, and other household needs from one place.</div></div>
+          <div class="faq-item"><button class="faq-question"><span>How much will a service cost?</span><span>+</span></button><div class="faq-answer">Prices shown are starting prices only. Actual pricing would depend on the job, materials, location, and service provider.</div></div>
+          <div class="faq-item"><button class="faq-question"><span>Can I choose the date and time?</span><span>+</span></button><div class="faq-answer">Yes. Enter your preferred date and time in the booking form. Availability is confirmed by the service provider.</div></div>
+          <div class="faq-item"><button class="faq-question"><span>What happens after I book?</span><span>+</span></button><div class="faq-answer">Your request is saved so our team can follow up and arrange a professional for you.</div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-7h6v7"/></svg></span>GharSewa<span style="color:#91d6a7">.</span></a>
+          <p>Thoughtful home services, made simple. Helping you care for the place you call home.</p>
+          <div class="footer-social"><span class="social-dot">f</span><span class="social-dot">ig</span><span class="social-dot">in</span></div>
+        </div>
+        <div class="footer-col"><h4>Explore</h4><a href="#services">All services</a><a href="#how-it-works">How it works</a><a href="#why-us">Why GharSewa</a><a href="#faq">FAQs</a></div>
+        <div class="footer-col"><h4>Popular services</h4><a href="#services" data-pick="Plumbing">Plumbing</a><a href="#services" data-pick="Electrical">Electrical</a><a href="#services" data-pick="Home cleaning">Home cleaning</a><a href="#services" data-pick="Carpentry">Carpentry</a></div>
+        <div class="footer-col"><h4>Get in touch</h4><a href="mailto:hello@gharsewa.example">hello@gharsewa.example</a><a href="#home">Kathmandu Valley, Nepal</a><a href="#faq">Help & support</a></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> GharSewa. All rights reserved.</span><span>Home services for Kathmandu Valley.</span></div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal-head">
+        <div><h2 id="modalTitle">Book a service</h2><p>Tell us a little about what your home needs.</p></div>
+        <button class="close-modal" id="closeModal" aria-label="Close booking form">×</button>
+      </div>
+      <form class="booking-form" id="bookingForm" method="post" action="{% url 'book' %}">
+        {% csrf_token %}
+        <div class="form-field full"><label for="serviceType">What service do you need?</label><select id="serviceType" name="service" required><option value="">Choose a service</option>{% for service in services %}<option value="{{ service.id }}">{{ service.name }}</option>{% endfor %}<option value="other">Other home service</option></select></div>
+        <div class="form-field"><label for="customerName">Your name</label><input id="customerName" name="customer_name" maxlength="100" placeholder="e.g. Anil Sharma" required /></div>
+        <div class="form-field"><label for="customerPhone">Phone number</label><input id="customerPhone" name="customer_phone" maxlength="20" type="tel" placeholder="98XXXXXXXX" pattern="[0-9+ ()-]{7,16}" required /></div>
+        <div class="form-field"><label for="serviceDate">Preferred date</label><input id="serviceDate" name="service_date" type="date" required /></div>
+        <div class="form-field"><label for="serviceTime">Preferred time</label><select id="serviceTime" name="time_slot" required><option value="">Choose a time</option>{% for value, label in time_slots %}<option value="{{ value }}">{{ label }}</option>{% endfor %}</select></div>
+        <div class="form-field full"><label for="customerAddress">Your area / address</label><input id="customerAddress" name="address" maxlength="255" placeholder="e.g. Baneshwor, Kathmandu" required /></div>
+        <div class="form-field full"><label for="jobDetails">What needs to be done? (optional)</label><textarea id="jobDetails" name="details" placeholder="Describe the issue so the professional knows what to expect..."></textarea></div>
+        <div class ="form-field full"><label for="customerEmail">Your email!! To get confirmation of your booking!!</label><input id="customerEmail" name="customer_email" maxlength="100" type="email" placeholder="e.g. anil.sharma@example.com" required></input></div>
+        <button class="btn btn-primary" type="submit">Submit booking <span>→</span></button>
+        <p class="form-note">We’ll use your details only to arrange this service.</p>
+      </form>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const modal = document.getElementById('bookingModal');
+    const bookingForm = document.getElementById('bookingForm');
+    const toast = document.getElementById('toast');
+    const serviceSearch = document.getElementById('serviceSearch');
+    const serviceCards = [...document.querySelectorAll('.service-card')];
+    const categoryButtons = [...document.querySelectorAll('.category-chip')];
+    let activeCategory = 'All';
+    let toastTimer;
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 3600);
+    }
+    function openModal(service = '') {
+      modal.classList.add('show');
+      document.body.style.overflow = 'hidden';
+      if (service) document.getElementById('serviceType').value = service;
+      setTimeout(() => (service ? document.getElementById('customerName') : document.getElementById('serviceType')).focus(), 100);
+    }
+    function closeModal() {
+      modal.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+    document.querySelectorAll('[data-book]').forEach(button => button.addEventListener('click', () => openModal()));
+    document.getElementById('closeModal').addEventListener('click', closeModal);
+    modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') closeModal(); });
+
+    function filterServices() {
+      const query = serviceSearch.value.trim().toLowerCase();
+      let visible = 0;
+      serviceCards.forEach(card => {
+        const matchesQuery = (card.dataset.name + ' ' + card.dataset.description + ' ' + card.dataset.category).toLowerCase().includes(query);
+        const matchesCategory = activeCategory === 'All' || card.dataset.category === activeCategory;
+        const show = matchesQuery && matchesCategory;
+        card.style.display = show ? 'flex' : 'none';
+        if (show) visible++;
+      });
+      document.getElementById('noResults').style.display = visible ? 'none' : 'block';
+    }
+    categoryButtons.forEach(button => button.addEventListener('click', () => {
+      activeCategory = button.dataset.category;
+      categoryButtons.forEach(chip => chip.classList.toggle('active', chip === button));
+      filterServices();
+    }));
+    document.getElementById('searchBtn').addEventListener('click', () => {
+      filterServices();
+      document.getElementById('services').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    serviceSearch.addEventListener('input', filterServices);
+    serviceCards.forEach(card => card.addEventListener('click', () => openModal(card.dataset.id)));
+
+    document.querySelectorAll('.faq-question').forEach(button => button.addEventListener('click', () => {
+      const item = button.closest('.faq-item');
+      item.classList.toggle('open');
+      button.setAttribute('aria-expanded', item.classList.contains('open') ? 'true' : 'false');
+    }));
+
+    document.querySelectorAll('[data-pick]').forEach(link => link.addEventListener('click', () => {
+      const name = link.dataset.pick;
+      activeCategory = 'All';
+      categoryButtons.forEach(chip => chip.classList.toggle('active', chip.dataset.category === 'All'));
+      serviceSearch.value = '';
+      filterServices();
+      setTimeout(() => {
+        const card = serviceCards.find(item => item.dataset.name === name);
+        if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+    }));
+
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      const nav = document.getElementById('navLinks');
+      const isOpen = nav.classList.toggle('open');
+      document.getElementById('menuToggle').setAttribute('aria-expanded', String(isOpen));
+      document.getElementById('menuToggle').textContent = isOpen ? '×' : '☰';
+    });
+    document.querySelectorAll('#navLinks a').forEach(link => link.addEventListener('click', () => {
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('menuToggle').setAttribute('aria-expanded', 'false');
+      document.getElementById('menuToggle').textContent = '☰';
+    }));
+
+    document.getElementById('signInBtn').addEventListener('click', () => showToast('Sign-in is coming soon.'));
+
+    const submitBtn = bookingForm.querySelector('button[type="submit"]');
+    bookingForm.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (!bookingForm.reportValidity()) return;
+      submitBtn.disabled = true;
+      try {
+        const response = await fetch(bookingForm.action, {
+          method: 'POST',
+          body: new FormData(bookingForm),   // includes the CSRF token
+          headers: { 'X-Requested-With': 'XMLHttpRequest' },
+        });
+        const data = await response.json();
+        if (data.ok) {
+          closeModal();
+          bookingForm.reset();
+          showToast(data.message);
+        } else {
+          const first = Object.values(data.errors || {})[0];
+          showToast(first ? first[0] : 'Please check the form and try again.');
+        }
+      } catch (error) {
+        showToast('Could not reach the server. Please try again.');
+      } finally {
+        submitBtn.disabled = false;
+      }
+    });
+
+    // Prevent selecting a date in the past.
+    const dateInput = document.getElementById('serviceDate');
+    const today = new Date();
+    const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+    dateInput.min = localToday;
+  </script>
+</body>
+</html>
