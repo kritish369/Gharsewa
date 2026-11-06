@@ -30,7 +30,7 @@ def book(request):
         customer_mail = form.cleaned_data.get('customer_email')
         send_mail(
             subject="New Booking Request",
-            message=f"New booking request from {booking.customer_name} for {service} on {booking.service_date}.",
+            message=f"New booking request from {booking.customer_name} \n for {service}  \n on {booking.service_date}. \n Contact: {booking.customer_phone} \n Address: {booking.address} \n Details: {booking.details}",
             from_email=settings.EMAIL_HOST_USER,
             recipient_list=[settings.EMAIL_HOST_USER, customer_mail]
         )
@@ -42,6 +42,5 @@ def book(request):
     
     errors = {field: [str(e) for e in errs] for field, errs in form.errors.items()}
     return JsonResponse({"ok": False, "errors": errors}, status=400)
-
 
 
